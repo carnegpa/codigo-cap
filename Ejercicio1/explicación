@@ -1,0 +1,20 @@
+Compilación: gcc -fopenmp –o hola openmp_hola.c
+Resultado de la ejecución ./hola (I7-6700HQ: 4 cores-8 threads)
+Hola desde el thread 0 de 8 threads
+Hola desde el thread 6 de 8 threads
+Hola desde el thread 7 de 8 threads
+Hola desde el thread 5 de 8 threads
+Hola desde el thread 2 de 8 threads
+Hola desde el thread 1 de 8 threads
+Hola desde el thread 3 de 8 threads
+Hola desde el thread 4 de 8 threads
+
+Notas:
+Desde la línea de comandos se puede especificar el número de hilos que se
+ejecutarán en las regiones paralela:
+
+OMP_NUM_THREADS=4 ./hola (No puede haber espacios en blanco en OMP_NUM_THREADS=4
+
+Se puede especificar el número de hilos que ejecutarán una región paralela
+mediante la siguiente función:
+omp_set_num_threads()
